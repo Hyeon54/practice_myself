@@ -27,3 +27,9 @@ for t in range(1, testcase+1):
         answer = answer + A[i]
     
     print(str(testcase) + " " + str(answer/2))
+
+# 오류랑 수정
+# 1	answer 누적됨	테스트케이스별 초기화 없음	for t 내부에서 answer = 0
+# 2	출력에서 testcase 출력	전부 같은 숫자 출력됨	t 또는 값만 출력해야 함
+# 3	answer / 2	반으로 나눌 이유 없음	그냥 answer 출력
+# 4	배열 값 10000개만 초기화	나머지는 전부 0 → 잘못된 합 가능	인덱스 범위 통일 필요
